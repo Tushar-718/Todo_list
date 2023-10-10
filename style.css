@@ -13,6 +13,12 @@
     padding: 15px;
     margin: auto;
     margin-top: 50px;
+    overflow-y: scroll;
+}
+
+/* hide scroll bar while using it */
+.app::-webkit-scrollbar { 
+    width: 0 !important;
 }
 
 #addNew {

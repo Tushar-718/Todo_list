@@ -44,7 +44,7 @@
                         <button type="button" class="btn btn-secondary text-bg-danger" data-bs-dismiss="modal">
                             Close
                         </button>
-                        <button type="submit" class="btn btn-primary text-bg-success">
+                        <button type="submit" id="add" class="btn btn-primary text-bg-success">
                             Add
                         </button>
                     </div>
@@ -55,20 +55,20 @@
         <div id="tasks">
             <div>
                 <span class="fw-bold">Task 1</span>
-                <span class="small text-secondary fw-bold">01-01-2023</span>
+                <span class="small text-secondary fw-bold">2023-01-01</span>
                 <p>Going to gym</p>
                 <span class="options">
-                    <button class="e_button" type="button">Edit</button>
-                    <button class="d_button" type="button">Delete</button>
+                    <button onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="e_button" type="button">Edit</button>
+                    <button onClick="deleteTask(this)" class="d_button" type="button">Delete</button>
                 </span>
             </div>
             <div>
                 <span class="fw-bold">Task 2</span>
-                <span class="small text-secondary fw-bold">01-01-2023</span>
+                <span class="small text-secondary fw-bold">2023-01-01</span>
                 <p>Going to gym</p>
                 <span class="options">
-                    <button class="e_button" type="button">Edit</button>
-                    <button class="d_button" type="button">Delete</button>
+                    <button onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="e_button" type="button">Edit</button>
+                    <button onClick="deleteTask(this)" class="d_button" type="button">Delete</button>
                 </span>
             </div>
         </div>
